@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew & Bean - Cafe Landing Clone | Task 6</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">BREW & BEAN ☕</div>
+    <ul id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menuSection">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="menuToggle">☰</div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-left">
+    <span class="badge">EST. 2020 • ACCRA</span>
+    <h1>Fresh Coffee,<br><span>Fresh Ideas.</span></h1>
+    <p>We are a minimal cafe clone built with  Only HTML, CSS & JavaScript for Saiket Task 6.</p>
+    <div class="btns">
+      <button class="primary" id="viewMenuBtn">View Menu →</button>
+      <button class="secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Visit Us</button>
+    </div>
+    <div class="info-bar">
+      <div><b>5.0</b><span>Rating</span></div>
+      <div><b>500+</b><span>Daily Orders</span></div>
+      <div><b>100%</b><span>Organic</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="cup-art">
+      <div class="steam"><span></span><span></span><span></span></div>
+      <div class="cup">☕</div>
+      <div class="saucer"></div>
+    </div>
+  </div>
+</section>
+
+<section class="hidden-menu" id="menuSection">
+  <div class="menu-header">
+    <h2>Our Menu</h2>
+    <p id="menuHint">Click "View Menu" above to display menu</p>
+    <button id="closeMenuBtn" class="close-btn">✕ Close Menu</button>
+  </div>
+  
+  <div class="menu-grid" id="menuGrid">
+    <div class="item">
+      <div class="item-top"><span>☕</span><b>GHS 25</b></div>
+      <h3>Espresso</h3>
+      <p>Strong and bold single shot.</p>
+    </div>
+    <div class="item popular">
+      <div class="pop">BESTSELLER</div>
+      <div class="item-top"><span>🥛</span><b>GHS 35</b></div>
+      <h3>Cappuccino</h3>
+      <p>Espresso + steamed milk + foam.</p>
+    </div>
+    <div class="item">
+      <div class="item-top"><span>🍫</span><b>GHS 40</b></div>
+      <h3>Mocha</h3>
+      <p>Chocolate espresso with milk.</p>
+    </div>
+    <div class="item">
+      <div class="item-top"><span>🍵</span><b>GHS 30</b></div>
+      <h3>Green Tea</h3>
+      <p>Organic leaves from Ghana.</p>
+    </div>
+    <div class="item">
+      <div class="item-top"><span>🥐</span><b>GHS 28</b></div>
+      <h3>Croissant</h3>
+      <p>Freshly baked daily.</p>
+    </div>
+    <div class="item">
+      <div class="item-top"><span>🍰</span><b>GHS 32</b></div>
+      <h3>Cheesecake</h3>
+      <p>Creamy slice with berries.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-box">
+    <h2>About Our Cafe</h2>
+    <p>This is a cloned landing page layout.</p>
+    <ul>
+      <li>✓ Open Mon - Sat, 7am - 9pm</li>
+      <li>✓ Free WiFi for Students</li>
+      <li>✓ Built for Saiket Task 6</li>
+    </ul>
+  </div>
+  <div class="hours-box">
+    <h3>Opening Hours</h3>
+    <p><span>Mon - Fri</span><b>7am - 9pm</b></p>
+    <p><span>Saturday</span><b>8am - 10pm</b></p>
+    <p><span>Sunday</span><b>Closed</b></p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Order Online</h2>
+  <form id="orderForm">
+    <input type="text" id="custName" placeholder="Your Name" required>
+    <input type="text" id="custOrder" placeholder="What do you want? e.g. 2 Cappuccino" required>
+    <button type="submit" class="primary full">Place Order</button>
+    <span id="orderStatus"></span>
+  </form>
+</section>
+
+<footer>© 2026 Brew & Bean Clone | Task 6 - Saiket Internship| HTML • CSS • JS</footer>
+<script src="script.js"></script>
+</body>
+</html>
